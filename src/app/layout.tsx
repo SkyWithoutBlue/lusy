@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lusy - Modern Glassmorphic Design",
+  title: "Lusy",
   description: "Discover the beauty of modern design with glassmorphic effects. A stunning showcase of contemporary web design.",
   keywords: ["glassmorphic", "modern design", "web development", "UI/UX", "Next.js"],
   authors: [{ name: "Lusy" }],
