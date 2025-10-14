@@ -81,11 +81,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Focus styles */
-*:focus {
-  outline: 2px solid rgba(154, 138, 136, 0.5);
-  outline-offset: 2px;
-}
 
 /* Selection styles */
 ::selection {
