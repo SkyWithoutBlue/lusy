@@ -4,6 +4,7 @@ import Services from "@/components/Services/Services";
 import About from "@/components/About/About";
 import Advantages from "@/components/Advantages/Advantages";
 import Footer from "@/components/Footer/Footer";
+import Cart from "@/components/ui/Cart";
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             <Advantages />
             <About />
             <Footer />
+            <Cart />
         </div>
     );
 }

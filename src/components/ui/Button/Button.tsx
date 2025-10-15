@@ -15,7 +15,7 @@ export default function Button({
     ...props
 }: ButtonProps) {
     const baseClasses =
-        "font-semibold rounded-full transition-all duration-300 focus:outline-none focus:ring-0 active:ring-0 focus-visible:outline-none cursor-pointer";
+        "font-semibold rounded-full transition-all duration-300 focus:outline-none focus:ring-0 active:ring-0 focus-visible:outline-none cursor-pointer flex flex-row-reverse  gap-4 rounded-full items-center justify-center";
 
     const variantClasses = {
         primary: "bg-black text-white hover:scale-105 hover:shadow-2xl",

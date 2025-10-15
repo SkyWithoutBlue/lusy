@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Navigation from "@/components/ui/Navigation";
 import Button from "@/components/ui/Button";
+import CartIcon from "@/components/ui/CartIcon";
 import { navigationItems } from "@/constants/navigation";
 
 export default function Header() {
@@ -30,13 +31,15 @@ export default function Header() {
                         </div>
                         <Navigation items={navigationItems} />
 
-                        <div className="hidden lg:flex items-center">
+                        <div className="hidden lg:flex items-center justify-center space-x-4 gap-6!">
+                            <CartIcon/>
                             <Button variant="secondary" size="sm">
                                 Записаться
                             </Button>
                         </div>
 
-                        <div className="lg:hidden">
+                        <div className="lg:hidden flex items-center space-x-2! gap-3!">
+                            <CartIcon />
                             <button
                                 onClick={toggleMenu}
                                 className="inline-flex items-center justify-center p-3 rounded-xl text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-300 focus:outline-none focus:ring-0"
@@ -49,24 +52,24 @@ export default function Header() {
                                 </span>
                                 <div className="relative w-6 h-6">
                                     <span
-                                        className={`absolute left-0 top-1/2 h-0.5 w-6 bg-current -translate-y-1/2 transition-transform duration-300 ease-in-out origin-center ${
+                                        className={`absolute top-1/2 left-1/2 h-0.5 w-5 bg-current transition-all duration-300 ease-in-out transform -translate-x-1/2 ${
                                             isMenuOpen
-                                                ? "rotate-45"
-                                                : "-translate-y-[6px]"
+                                                ? "rotate-45 -translate-y-1/2"
+                                                : "-translate-y-1.5"
                                         }`}
                                     ></span>
                                     <span
-                                        className={`absolute left-0 top-1/2 h-0.5 w-6 bg-current -translate-y-1/2 transition-opacity duration-200 ease-in-out ${
+                                        className={`absolute top-1/2 left-1/2 h-0.5 w-5 bg-current transition-all duration-300 ease-in-out transform -translate-x-1/2 ${
                                             isMenuOpen
                                                 ? "opacity-0"
-                                                : "opacity-100"
+                                                : "opacity-100 -translate-y-1/2"
                                         }`}
                                     ></span>
                                     <span
-                                        className={`absolute left-0 top-1/2 h-0.5 w-6 bg-current -translate-y-1/2 transition-transform duration-300 ease-in-out origin-center ${
+                                        className={`absolute top-1/2 left-1/2 h-0.5 w-5 bg-current transition-all duration-300 ease-in-out transform -translate-x-1/2 ${
                                             isMenuOpen
-                                                ? "-rotate-45"
-                                                : "translate-y-[6px]"
+                                                ? "-rotate-45 -translate-y-1/2"
+                                                : "translate-y-1.5"
                                         }`}
                                     ></span>
                                 </div>
