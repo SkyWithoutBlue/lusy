@@ -45,8 +45,7 @@ export default function Services() {
                         программы нацелены на здоровый и устойчивый результат.
                     </p>
                 </div>
-
-                <div className="mt-20 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div className="mt-12! sm:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     {services.map((service) => (
                         <ServiceCard
                             key={service.id}
