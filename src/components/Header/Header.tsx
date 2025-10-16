@@ -5,6 +5,7 @@ import Link from "next/link";
 import Navigation from "@/components/ui/Navigation";
 import Button from "@/components/ui/Button";
 import CartIcon from "@/components/ui/CartIcon";
+import { ProfileIcon } from "@/components/ui";
 import { navigationItems } from "@/constants/navigation";
 
 export default function Header() {
@@ -32,14 +33,13 @@ export default function Header() {
                         <Navigation items={navigationItems} />
 
                         <div className="hidden lg:flex items-center justify-center space-x-4 gap-6!">
-                            <CartIcon/>
-                            <Button variant="secondary" size="sm">
-                                Записаться
-                            </Button>
+                            <CartIcon />
+                            <ProfileIcon />
                         </div>
 
                         <div className="lg:hidden flex items-center space-x-2! gap-3!">
                             <CartIcon />
+                            <ProfileIcon />
                             <button
                                 onClick={toggleMenu}
                                 className="inline-flex items-center justify-center p-3 rounded-xl text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-300 focus:outline-none focus:ring-0"
@@ -89,10 +89,12 @@ export default function Header() {
                                 <Button
                                     variant="primary"
                                     size="lg"
-                                    className="w-full"
-                                    style={{ backgroundColor: "#9A8A88" }}
+                                    className="w-full group relative overflow-hidden"
                                 >
-                                    Записаться
+                                    <span className="relative z-10">
+                                        Записаться
+                                    </span>
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                                 </Button>
                             </div>
                         </div>

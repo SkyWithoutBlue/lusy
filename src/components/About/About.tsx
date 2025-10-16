@@ -41,18 +41,18 @@ const achievements = [
     {
         number: "8+",
         label: "лет опыта",
-        description: "в кросс-тренинге и фитнесе"
+        description: "в кросс-тренинге и фитнесе",
     },
     {
         number: "500+",
         label: "довольных клиентов",
-        description: "достигли своих целей"
+        description: "достигли своих целей",
     },
     {
         number: "24/7",
         label: "здоровый образ жизни",
-        description: "мой образ жизни и философия"
-    }
+        description: "мой образ жизни и философия",
+    },
 ];
 
 export default function About() {
@@ -75,27 +75,44 @@ export default function About() {
                             </div>
                             <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
                                 <p>
-                                    Привет! Меня зовут <span className="text-black font-semibold">Людмила Чипизубова</span>,
-                                    и я персональный тренер с <span className="text-black font-semibold">8-летним стажем </span>
+                                    Привет! Меня зовут{" "}
+                                    <span className="text-black font-semibold">
+                                        Людмила Чипизубова
+                                    </span>
+                                    , и я персональный тренер с{" "}
+                                    <span className="text-black font-semibold">
+                                        8-летним стажем{" "}
+                                    </span>
                                     в области кросс-тренинга и фитнеса.
                                 </p>
 
                                 <p>
-                                    Моя страсть к здоровому образу жизни началась много лет назад, и с тех пор
-                                    я помогаю людям раскрывать их потенциал через правильные тренировки и
-                                    сбалансированное питание.
+                                    Моя страсть к здоровому образу жизни
+                                    началась много лет назад, и с тех пор я
+                                    помогаю людям раскрывать их потенциал через
+                                    правильные тренировки и сбалансированное
+                                    питание.
                                 </p>
 
                                 <p>
-                                    Я специализируюсь на <span className="text-black font-semibold">кросс-тренинге</span> —
-                                    это не просто тренировки, это философия жизни. Кросс-тренинг объединяет
-                                    силу, выносливость, гибкость и координацию, создавая гармонично развитое тело.
+                                    Я специализируюсь на{" "}
+                                    <span className="text-black font-semibold">
+                                        кросс-тренинге
+                                    </span>{" "}
+                                    — это не просто тренировки, это философия
+                                    жизни. Кросс-тренинг объединяет силу,
+                                    выносливость, гибкость и координацию,
+                                    создавая гармонично развитое тело.
                                 </p>
 
                                 <p>
-                                    <span className="text-black font-semibold">Здоровый образ жизни</span> — это не просто
-                                    моя работа, это мой образ жизни. Я практикую то, что проповедую: правильное
-                                    питание, регулярные тренировки, достаточный сон и позитивное мышление.
+                                    <span className="text-black font-semibold">
+                                        Здоровый образ жизни
+                                    </span>{" "}
+                                    — это не просто моя работа, это мой образ
+                                    жизни. Я практикую то, что проповедую:
+                                    правильное питание, регулярные тренировки,
+                                    достаточный сон и позитивное мышление.
                                 </p>
                             </div>
 
@@ -103,12 +120,12 @@ export default function About() {
                                 {achievements.map((achievement, index) => (
                                     <div
                                         key={index}
-                                        className="glass rounded-xl p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                                        className="glass rounded-xl p-2! text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
                                     >
-                                        <div className="text-3xl sm:text-4xl font-bold text-black mb-2">
+                                        <div className="text-3xl sm:text-4xl font-bold text-black mb-2!">
                                             {achievement.number}
                                         </div>
-                                        <div className="text-lg font-semibold text-black mb-1">
+                                        <div className="text-lg font-semibold text-black mb-1!">
                                             {achievement.label}
                                         </div>
                                         <div className="text-sm text-gray-600">
@@ -119,7 +136,7 @@ export default function About() {
                             </div>
 
                             {/* Кнопки */}
-                            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                            <div className="flex flex-col sm:flex-row gap-4 pt-4!">
                                 <Button
                                     variant="primary"
                                     size="lg"
@@ -130,10 +147,7 @@ export default function About() {
                                     </span>
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                                 </Button>
-                                <Button
-                                    variant="secondary"
-                                    size="lg"
-                                >
+                                <Button variant="secondary" size="lg">
                                     Связаться со мной
                                 </Button>
                             </div>
@@ -144,7 +158,7 @@ export default function About() {
                         <div className="relative">
                             <div className="relative group">
                                 <div className="absolute -inset-4 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded-3xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
-                                <div className="relative bg-white rounded-2xl p-2 shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
+                                <div className="relative bg-white rounded-2xl p-2! shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
                                     <div className="relative overflow-hidden rounded-xl mt-12! pt-12! mb-12!">
                                         <Image
                                             src="/lusy-top.png"
@@ -160,7 +174,10 @@ export default function About() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="absolute -top-8 -right-8 w-16 h-16 border-4 border-gray-200 rounded-full animate-spin opacity-40" style={{ animationDuration: "20s" }}></div>
+                            <div
+                                className="absolute -top-8 -right-8 w-16 h-16 border-4 border-gray-200 rounded-full animate-spin opacity-40"
+                                style={{ animationDuration: "20s" }}
+                            ></div>
                             <div className="absolute -bottom-6 -left-6 w-12 h-12 border-3 border-gray-300 rounded-full animate-pulse opacity-50"></div>
                             <div className="absolute top-1/4 -left-3 w-6 h-6 bg-gray-200 rotate-45 opacity-60"></div>
                             <div className="absolute bottom-1/3 -right-2 w-4 h-4 bg-gray-300 rotate-12 opacity-70"></div>

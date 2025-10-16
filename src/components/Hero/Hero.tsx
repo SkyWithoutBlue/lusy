@@ -50,10 +50,10 @@ export default function Hero() {
                     <div className="lg:col-span-7 lg:order-2 order-2">
                         <div className="space-y-8 mx-auto max-w-2xl lg:max-w-none text-center lg:text-left">
                             <div className="overflow-hidden">
-                                <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-black mb-4 leading-tight transform translate-y-0 opacity-100 transition-all duration-1000">
+                                <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-black mb-4! transform translate-y-0 opacity-100 transition-all duration-1000">
                                     Сильное тело. Уверенный дух.
                                     <span
-                                        className="block"
+                                        className="block mt-2!"
                                         style={{ color: "#9A8A88" }}
                                     >
                                         Твоя лучшая версия — вместе со мной.
