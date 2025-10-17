@@ -41,7 +41,7 @@ export default function ProfileIcon() {
             <div className="relative" ref={dropdownRef}>
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="flex items-center space-x-2 p-2 rounded-full hover:scale-105 transition-all duration-300 group"
+                    className="flex items-center space-x-2! gap-1! p-2! rounded-full hover:scale-105 transition-all duration-300 group"
                 >
                     <div className="w-10 h-10 bg-gradient-to-r from-gray-400 to-gray-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
                         <svg

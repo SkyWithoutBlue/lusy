@@ -32,7 +32,7 @@ export default function Header() {
                         </div>
                         <Navigation items={navigationItems} />
 
-                        <div className="hidden lg:flex items-center justify-center space-x-4 gap-6!">
+                        <div className="hidden lg:flex items-center justify-center space-x-4! gap-6!">
                             <CartIcon />
                             <ProfileIcon />
                         </div>
