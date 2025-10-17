@@ -59,21 +59,21 @@ export default function About() {
     return (
         <section
             id="about"
-            className="relative py-16 sm:py-20 lg:py-28 bg-white overflow-hidden"
+            className="relative py-16! sm:py-20! lg:py-28! bg-white overflow-hidden"
         >
             <DecorativeElements elements={aboutDecorativeElements} />
 
-            <div className="relative z-10 max-w-7xl mx-auto! px-6 sm:px-8">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center!">
+            <div className="relative z-10 max-w-7xl mx-auto! px-6! sm:px-8!">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8! lg:gap-16! items-center!">
                     <div className="lg:col-span-7 order-1 lg:order-1">
-                        <div className="space-y-8">
-                            <div className="space-y-4">
+                        <div className="space-y-8!">
+                            <div className="space-y-4!">
                                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black leading-tight">
                                     Обо мне
                                 </h2>
-                                <div className="w-20 h-1 bg-gradient-to-r from-black to-gray-400 rounded-full"></div>
+                                <div className="w-full h-1 bg-gradient-to-r from-black to-gray-400 rounded-full"></div>
                             </div>
-                            <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+                            <div className="space-y-6! text-gray-700 text-lg leading-relaxed">
                                 <p>
                                     Привет! Меня зовут{" "}
                                     <span className="text-black font-semibold">
@@ -116,7 +116,7 @@ export default function About() {
                                 </p>
                             </div>
 
-                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 py-8!">
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6! py-8!">
                                 {achievements.map((achievement, index) => (
                                     <div
                                         key={index}
@@ -157,7 +157,6 @@ export default function About() {
                     <div className="lg:col-span-5 order-2 lg:order-2">
                         <div className="relative">
                             <div className="relative group">
-                                <div className="absolute -inset-4 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded-3xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
                                 <div className="relative bg-white rounded-2xl p-2! shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
                                     <div className="relative overflow-hidden rounded-xl mt-12! pt-12! mb-12!">
                                         <Image

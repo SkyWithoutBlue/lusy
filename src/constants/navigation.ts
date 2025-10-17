@@ -8,5 +8,4 @@ export const navigationItems: NavigationItem[] = [
     { href: "#services", label: "Услуги" },
     { href: "#advantages", label: "Преимущества" },
     { href: "#about", label: "Обо мне" },
-    { href: "#contact", label: "Контакты" },
 ];
