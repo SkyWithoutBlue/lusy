@@ -15,8 +15,8 @@ export default function Navigation({
     onItemClick,
 }: NavigationProps) {
     const baseClasses = isMobile
-        ? "block px-4 py-3 text-lg font-medium text-gray-700 hover:text-black hover:bg-gray-50 rounded-xl transition-all duration-300"
-        : "relative px-6! py-3! text-gray-700 hover:text-black font-medium text-sm transition-all duration-300 rounded-lg hover:bg-gray-50 group";
+        ? "block px-4 py-3 text-lg font-medium text-[#6B6B6B] hover:text-[#2C2C2C] hover:bg-gray-50 rounded-xl transition-all duration-300"
+        : "relative px-6! py-3! text-[#6B6B6B] hover:text-[#2C2C2C] font-medium text-sm transition-all duration-300 rounded-lg hover:bg-gray-50 group";
 
     return (
         <nav
@@ -38,7 +38,7 @@ export default function Navigation({
                     >
                         {item.label}
                         {!isMobile && (
-                            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-4"></span>
+                            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-[#2C2C2C] transition-all duration-300 group-hover:w-4"></span>
                         )}
                     </a>
                 ))}

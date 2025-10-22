@@ -37,10 +37,10 @@ export default function Services() {
 
             <div className="relative z-10 max-w-7xl mx-auto! px-6! sm:px-8">
                 <div className="text-center max-w-2xl mx-auto! pt-12!">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-black tracking-tight">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-[#2C2C2C] tracking-tight">
                         Мои услуги
                     </h2>
-                    <p className="mt-4 text-gray-700 sm:text-lg">
+                    <p className="mt-4 text-[#6B6B6B] sm:text-lg">
                         Выберите формат, который подойдёт именно вам. Все
                         программы нацелены на здоровый и устойчивый результат.
                     </p>

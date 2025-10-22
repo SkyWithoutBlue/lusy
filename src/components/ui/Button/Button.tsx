@@ -18,11 +18,11 @@ export default function Button({
         "font-semibold rounded-full transition-all duration-300 focus:outline-none focus:ring-0 active:ring-0 focus-visible:outline-none cursor-pointer flex flex-row-reverse  gap-4 rounded-full items-center justify-center";
 
     const variantClasses = {
-        primary: "bg-black text-white hover:scale-105 hover:shadow-2xl",
+        primary: "bg-[#2C2C2C] text-white hover:bg-[#404040] hover:scale-105 hover:shadow-2xl",
         secondary:
-            "bg-transparent border-2 border-black text-black hover:bg-black hover:text-white hover:scale-105",
+            "bg-transparent border-2 border-[#2C2C2C] text-[#2C2C2C] hover:bg-[#2C2C2C] hover:text-white hover:scale-105",
         outline:
-            "bg-transparent border-2 border-gray-300 text-gray-700 hover:border-black hover:text-black hover:scale-105",
+            "bg-transparent border-2 border-gray-300 text-[#6B6B6B] hover:border-[#2C2C2C] hover:text-[#2C2C2C] hover:scale-105",
     };
 
     const sizeClasses = {

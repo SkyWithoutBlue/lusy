@@ -35,11 +35,10 @@ export default function ServiceCard({
         <article className="group relative bg-white p-4! rounded-2xl shadow-xl border border-gray-100 hover:border-gray-200 overflow-hidden transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-2xl will-change-transform">
             <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/5 pointer-events-none"></div>
 
-            {/* minimal highlight sweep */}
             <div className="pointer-events-none absolute -inset-x-20 -top-px h-px bg-gradient-to-r from-transparent via-black/10 to-transparent opacity-0 translate-x-[-40%] group-hover:opacity-100 group-hover:translate-x-[40%] transition-all duration-700 ease-out"></div>
 
             <div className="p-6 sm:p-8">
-                <h3 className="text-xl font-semibold text-black">
+                <h3 className="text-xl font-semibold text-[#2C2C2C]">
                     {service.title}
                 </h3>
 

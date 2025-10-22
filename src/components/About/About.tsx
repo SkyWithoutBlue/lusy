@@ -68,19 +68,19 @@ export default function About() {
                     <div className="lg:col-span-7 order-1 lg:order-1">
                         <div className="space-y-8!">
                             <div className="space-y-4!">
-                                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black leading-tight">
+                                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2C2C2C] leading-tight">
                                     Обо мне
                                 </h2>
-                                <div className="w-full h-1 bg-gradient-to-r from-black to-gray-400 rounded-full"></div>
+                                <div className="w-full h-1 bg-gradient-to-r from-[#2C2C2C] to-gray-400 rounded-full"></div>
                             </div>
-                            <div className="space-y-6! text-gray-700 text-lg leading-relaxed">
+                            <div className="space-y-6! text-[#6B6B6B] text-lg leading-relaxed">
                                 <p>
                                     Привет! Меня зовут{" "}
-                                    <span className="text-black font-semibold">
+                                    <span className="text-[#2C2C2C] font-semibold">
                                         Людмила Чипизубова
                                     </span>
                                     , и я персональный тренер с{" "}
-                                    <span className="text-black font-semibold">
+                                    <span className="text-[#2C2C2C] font-semibold">
                                         8-летним стажем{" "}
                                     </span>
                                     в области кросс-тренинга и фитнеса.
@@ -96,7 +96,7 @@ export default function About() {
 
                                 <p>
                                     Я специализируюсь на{" "}
-                                    <span className="text-black font-semibold">
+                                    <span className="text-[#2C2C2C] font-semibold">
                                         кросс-тренинге
                                     </span>{" "}
                                     — это не просто тренировки, это философия
@@ -106,7 +106,7 @@ export default function About() {
                                 </p>
 
                                 <p>
-                                    <span className="text-black font-semibold">
+                                    <span className="text-[#2C2C2C] font-semibold">
                                         Здоровый образ жизни
                                     </span>{" "}
                                     — это не просто моя работа, это мой образ
@@ -122,10 +122,10 @@ export default function About() {
                                         key={index}
                                         className="glass rounded-xl p-2! text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
                                     >
-                                        <div className="text-3xl sm:text-4xl font-bold text-black mb-2!">
+                                        <div className="text-3xl sm:text-4xl font-bold text-[#2C2C2C] mb-2!">
                                             {achievement.number}
                                         </div>
-                                        <div className="text-lg font-semibold text-black mb-1!">
+                                        <div className="text-lg font-semibold text-[#2C2C2C] mb-1!">
                                             {achievement.label}
                                         </div>
                                         <div className="text-sm text-gray-600">
@@ -156,20 +156,18 @@ export default function About() {
 
                     <div className="lg:col-span-5 order-2 lg:order-2">
                         <div className="relative">
-                            <div className="relative group">
-                                <div className="relative bg-white rounded-2xl p-2! shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
-                                    <div className="relative overflow-hidden rounded-xl mt-12! pt-12! mb-12!">
+                        <div className="relative group">
+                                <div className="relative bg-white rounded-2xl p-4 sm:p-6 shadow-xl transform transition-transform duration-500 mx-auto">
+                                    <div className="relative overflow-hidden rounded-2xl max-h-[380px] sm:max-h-[480px] lg:max-h-[700px]">
                                         <Image
-                                            src="/lusy-top.png"
-                                            alt="Людмила Чипизубова - персональный тренер"
-                                            width={500}
-                                            height={500}
-                                            className="object-cover w-full h-auto max-h-[650px]"
+                                            src="/lusy-no-bg-preview.png"
+                                            alt="Lusy"
+                                            width={600}
+                                            height={700}
+                                            className="object-cover w-full h-auto mx-auto"
                                             priority
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
-                                        <div className="absolute top-4 right-4 w-3 h-3 bg-white/80 rounded-full animate-pulse"></div>
-                                        <div className="absolute bottom-4 left-4 w-2 h-2 bg-white/60 rounded-full animate-bounce"></div>
+                                        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/10"></div>
                                     </div>
                                 </div>
                             </div>

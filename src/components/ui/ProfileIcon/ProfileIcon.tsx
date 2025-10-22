@@ -78,14 +78,14 @@ export default function ProfileIcon() {
                 {isOpen && (
                     <div className="absolute right-0 mt-5! w-48 glass rounded-2xl shadow-2xl border border-gray-200 py-2! z-50 transform transition-all duration-300 scale-100 bg-white!">
                         <div className="px-6! py-4! border-b border-gray-200">
-                            <p className="text-sm font-semibold text-black">
+                            <p className="text-sm font-semibold text-[#2C2C2C]">
                                 Гость
                             </p>
                         </div>
 
                         <Link
                             href="/auth/signin"
-                            className="block px-6! py-3! text-sm font-medium text-black hover:bg-white/50 transition-all duration-300"
+                            className="block px-6! py-3! text-sm font-medium text-[#2C2C2C] hover:bg-white/50 transition-all duration-300"
                             onClick={() => setIsOpen(false)}
                         >
                             Вход
@@ -93,7 +93,7 @@ export default function ProfileIcon() {
 
                         <Link
                             href="/auth/signup"
-                            className="block px-6! py-3! text-sm font-medium text-black hover:bg-white/50 transition-all duration-300"
+                            className="block px-6! py-3! text-sm font-medium text-[#2C2C2C] hover:bg-white/50 transition-all duration-300"
                             onClick={() => setIsOpen(false)}
                         >
                             Регистрация
@@ -110,14 +110,14 @@ export default function ProfileIcon() {
                 onClick={() => setIsOpen(!isOpen)}
                 className="flex items-center space-x-3! p-2! gap-6! rounded-full hover:scale-105 transition-all duration-300 group cursor-pointer"
             >
-                <div className="w-10 h-10 bg-gradient-to-r from-black to-gray-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
+                <div className="w-10 h-10 bg-gradient-to-r from-[#2C2C2C] to-gray-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
                     <span className="text-white text-sm font-bold">
                         {session?.user?.name?.charAt(0) ||
                             session?.user?.email?.charAt(0) ||
                             "U"}
                     </span>
                 </div>
-                <span className="text-sm font-semibold text-black hidden sm:block">
+                <span className="text-sm font-semibold text-[#2C2C2C] hidden sm:block">
                     {session?.user?.name || "Профиль"}
                 </span>
                 <svg
@@ -140,7 +140,7 @@ export default function ProfileIcon() {
             {isOpen && (
                 <div className="absolute right-0 mt-3 w-56 bg-white rounded-2xl shadow-2xl border border-gray-200 py-2! z-50 transform transition-all duration-300 scale-100">
                     <div className="px-6! py-4! border-b border-gray-200">
-                        <p className="text-sm font-semibold text-black">
+                        <p className="text-sm font-semibold text-[#2C2C2C]">
                             {session?.user?.name || "Пользователь"}
                         </p>
                         <p className="text-xs text-gray-600 mt-1!">
@@ -150,7 +150,7 @@ export default function ProfileIcon() {
 
                     <Link
                         href="/profile"
-                        className="block px-6! py-3! text-sm font-medium text-black hover:bg-white/50 transition-all duration-300"
+                        className="block px-6! py-3! text-sm font-medium text-[#2C2C2C] hover:bg-white/50 transition-all duration-300"
                         onClick={() => setIsOpen(false)}
                     >
                         Мой профиль
@@ -158,7 +158,7 @@ export default function ProfileIcon() {
 
                     <button
                         onClick={handleSignOut}
-                        className="block w-full text-left px-6! py-3! text-sm font-medium text-black hover:bg-white/50 transition-all duration-300 cursor-pointer"
+                        className="block w-full text-left px-6! py-3! text-sm font-medium text-[#2C2C2C] hover:bg-white/50 transition-all duration-300 cursor-pointer"
                     >
                         Выйти
                     </button>

@@ -56,7 +56,7 @@ export default function ProfilePage() {
                 <div className="max-w-4xl mx-auto!">
                     <div className="text-center my-12! mt-32!">
                         <div className="relative inline-block mb-8!">
-                            <div className="w-32 h-32 bg-gradient-to-r from-black to-gray-600 rounded-full mx-auto! flex items-center justify-center shadow-2xl">
+                            <div className="w-32 h-32 bg-gradient-to-r from-[#2C2C2C] to-gray-600 rounded-full mx-auto! flex items-center justify-center shadow-2xl">
                                 <span className="text-white text-4xl font-bold">
                                     {session?.user?.name?.charAt(0) ||
                                         session?.user?.email?.charAt(0) ||
@@ -70,11 +70,11 @@ export default function ProfilePage() {
                             <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-gray-200 rotate-45 opacity-60"></div>
                         </div>
 
-                        <h1 className="text-4xl sm:text-5xl font-bold text-black mb-4!">
+                        <h1 className="text-4xl sm:text-5xl font-bold text-[#2C2C2C] mb-4!">
                             Добро пожаловать,{" "}
                             {session?.user?.name || "Пользователь"}!
                         </h1>
-                        <div className="w-full h-1 bg-gradient-to-r from-black to-gray-400 rounded-full mx-auto! mb-4!"></div>
+                        <div className="w-full h-1 bg-gradient-to-r from-[#2C2C2C] to-gray-400 rounded-full mx-auto! mb-4!"></div>
                         <p className="text-gray-600 text-lg">
                             {session?.user?.email}
                         </p>
@@ -83,27 +83,27 @@ export default function ProfilePage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {/* Информация о профиле */}
                         <div className="glass rounded-2xl p-8! shadow-2xl transform transition-all duration-300 hover:scale-105">
-                            <h2 className="text-2xl font-bold text-black mb-6!">
+                            <h2 className="text-2xl font-bold text-[#2C2C2C] mb-6!">
                                 Информация о профиле
                             </h2>
                             <div className="space-y-6!">
                                 <div>
-                                    <label className="block text-sm font-semibold text-black mb-2!">
+                                    <label className="block text-sm font-semibold text-[#2C2C2C] mb-2!">
                                         Имя
                                     </label>
                                     <div className="p-3! bg-white/50 rounded-xl border border-gray-200">
-                                        <p className="text-black font-medium">
+                                        <p className="text-[#2C2C2C] font-medium">
                                             {session?.user?.name ||
                                                 "Не указано"}
                                         </p>
                                     </div>
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-semibold text-black mb-2!">
+                                    <label className="block text-sm font-semibold text-[#2C2C2C] mb-2!">
                                         Email
                                     </label>
                                     <div className="p-3! bg-white/50 rounded-xl border border-gray-200">
-                                        <p className="text-black font-medium">
+                                        <p className="text-[#2C2C2C] font-medium">
                                             {session?.user?.email}
                                         </p>
                                     </div>
@@ -113,7 +113,7 @@ export default function ProfilePage() {
 
                         {/* Управление аккаунтом */}
                         <div className="glass rounded-2xl p-8! shadow-2xl transform transition-all duration-300 hover:scale-105">
-                            <h2 className="text-2xl font-bold text-black mb-6!">
+                            <h2 className="text-2xl font-bold text-[#2C2C2C] mb-6!">
                                 Управление аккаунтом
                             </h2>
                             <div className="space-y-4!">

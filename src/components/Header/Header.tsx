@@ -24,9 +24,10 @@ export default function Header() {
                             <div className="flex items-center space-x-3">
                                 <Link
                                     href="/"
-                                    className="text-3xl font-bold text-black tracking-tight"
+                                    className="text-1xl text-center font-bold text-[#2C2C2C] tracking-tight"
                                 >
-                                    Lusy.
+                                    Ludmila<br />
+                                    Chipizubova
                                 </Link>
                             </div>
                         </div>
@@ -42,7 +43,7 @@ export default function Header() {
                             <ProfileIcon />
                             <button
                                 onClick={toggleMenu}
-                                className="inline-flex items-center justify-center p-3 rounded-xl text-gray-700 hover:text-black hover:bg-gray-50 transition-all duration-300 focus:outline-none focus:ring-0"
+                                className="inline-flex items-center justify-center p-3 rounded-xl text-gray-700 hover:text-[#2C2C2C] hover:bg-gray-50 transition-all duration-300 focus:outline-none focus:ring-0"
                                 aria-expanded={isMenuOpen}
                             >
                                 <span className="sr-only">

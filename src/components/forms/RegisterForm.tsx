@@ -60,7 +60,7 @@ export default function RegisterForm() {
             <div className="max-w-md mx-auto!">
                 <div className="glass rounded-2xl p-8! shadow-2xl text-center">
                     <div className="text-green-600 text-8xl mb-6!">✓</div>
-                    <h2 className="text-3xl font-bold mb-4 text-black">
+                    <h2 className="text-3xl font-bold mb-4 text-[#2C2C2C]">
                         Регистрация успешна!
                     </h2>
                     <p className="text-gray-600 text-lg">
@@ -75,10 +75,10 @@ export default function RegisterForm() {
         <div className="max-w-md mx-auto!">
             <div className="glass rounded-2xl p-8! shadow-2xl transform transition-all duration-300 hover:scale-105">
                 <div className="text-center mb-8!">
-                    <h2 className="text-3xl font-bold text-black mb-4!">
+                    <h2 className="text-3xl font-bold text-[#2C2C2C] mb-4!">
                         Создать аккаунт
                     </h2>
-                    <div className="w-full h-1 bg-gradient-to-r from-black to-gray-400 rounded-full mx-auto"></div>
+                    <div className="w-full h-1 bg-gradient-to-r from-[#2C2C2C] to-gray-400 rounded-full mx-auto"></div>
                 </div>
 
                 {error && (
@@ -91,7 +91,7 @@ export default function RegisterForm() {
                     <div>
                         <label
                             htmlFor="name"
-                            className="block text-sm font-semibold text-black mb-2!"
+                            className="block text-sm font-semibold text-[#2C2C2C] mb-2!"
                         >
                             Имя (необязательно)
                         </label>
@@ -99,7 +99,7 @@ export default function RegisterForm() {
                             {...register("name")}
                             type="text"
                             id="name"
-                            className="w-full px-4! py-3! border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-0 focus:border-black transition-all duration-300 text-black placeholder-gray-500"
+                            className="w-full px-4! py-3! border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-0 focus:border-[#2C2C2C] transition-all duration-300 text-[#2C2C2C] placeholder-gray-500"
                             placeholder="Введите ваше имя"
                         />
                         {errors.name && (
@@ -112,7 +112,7 @@ export default function RegisterForm() {
                     <div>
                         <label
                             htmlFor="email"
-                            className="block text-sm font-semibold text-black mb-2!"
+                            className="block text-sm font-semibold text-[#2C2C2C] mb-2!"
                         >
                             Email
                         </label>
@@ -120,7 +120,7 @@ export default function RegisterForm() {
                             {...register("email")}
                             type="email"
                             id="email"
-                            className="w-full px-4! py-3! border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-0 focus:border-black transition-all duration-300 text-black placeholder-gray-500"
+                            className="w-full px-4! py-3! border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-0 focus:border-[#2C2C2C] transition-all duration-300 text-[#2C2C2C] placeholder-gray-500"
                             placeholder="Введите ваш email"
                         />
                         {errors.email && (
@@ -133,7 +133,7 @@ export default function RegisterForm() {
                     <div>
                         <label
                             htmlFor="password"
-                            className="block text-sm font-semibold text-black mb-2!"
+                            className="block text-sm font-semibold text-[#2C2C2C] mb-2!"
                         >
                             Пароль
                         </label>
@@ -141,7 +141,7 @@ export default function RegisterForm() {
                             {...register("password")}
                             type="password"
                             id="password"
-                            className="w-full px-4! py-3! border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-0 focus:border-black transition-all duration-300 text-black placeholder-gray-500"
+                            className="w-full px-4! py-3! border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-0 focus:border-[#2C2C2C] transition-all duration-300 text-[#2C2C2C] placeholder-gray-500"
                             placeholder="Введите пароль"
                         />
                         {errors.password && (
@@ -154,7 +154,7 @@ export default function RegisterForm() {
                     <div>
                         <label
                             htmlFor="confirmPassword"
-                            className="block text-sm font-semibold text-black mb-2!"
+                            className="block text-sm font-semibold text-[#2C2C2C] mb-2!"
                         >
                             Подтвердите пароль
                         </label>
@@ -162,7 +162,7 @@ export default function RegisterForm() {
                             {...register("confirmPassword")}
                             type="password"
                             id="confirmPassword"
-                            className="w-full px-4! py-3! border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-0 focus:border-black transition-all duration-300 text-black placeholder-gray-500"
+                            className="w-full px-4! py-3! border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-0 focus:border-[#2C2C2C] transition-all duration-300 text-[#2C2C2C] placeholder-gray-500"
                             placeholder="Подтвердите пароль"
                         />
                         {errors.confirmPassword && (
@@ -193,7 +193,7 @@ export default function RegisterForm() {
                         Уже есть аккаунт?{" "}
                         <a
                             href="/auth/signin"
-                            className="text-black font-semibold hover:underline transition-all duration-300"
+                            className="text-[#2C2C2C] font-semibold hover:underline transition-all duration-300"
                         >
                             Войти
                         </a>

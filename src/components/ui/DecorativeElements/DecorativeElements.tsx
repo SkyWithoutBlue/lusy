@@ -77,13 +77,13 @@ export default function DecorativeElements({
                         style={style}
                     >
                         {element.type === "border" && (
-                            <div className="w-full h-full border-2 border-black"></div>
+                            <div className="w-full h-full border-2 border-[#2C2C2C]"></div>
                         )}
                         {element.type === "circle" && (
                             <div className="w-full h-full border-2 border-gray-300 rounded-full"></div>
                         )}
                         {element.type === "square" && (
-                            <div className="w-full h-full border-2 border-black rotate-45"></div>
+                            <div className="w-full h-full border-2 border-[#2C2C2C] rotate-45"></div>
                         )}
                     </div>
                 );

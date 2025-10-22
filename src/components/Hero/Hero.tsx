@@ -50,7 +50,7 @@ export default function Hero() {
                     <div className="lg:col-span-7 lg:order-2 order-2">
                         <div className="space-y-8 mx-auto max-w-2xl lg:max-w-none text-center lg:text-left">
                             <div className="overflow-hidden">
-                                <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-black mb-4! transform translate-y-0 opacity-100 transition-all duration-1000">
+                                <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#2C2C2C] mb-4! transform translate-y-0 opacity-100 transition-all duration-1000">
                                     Сильное тело. Уверенный дух.
                                     <span
                                         className="block mt-2!"
@@ -61,7 +61,7 @@ export default function Hero() {
                                 </h1>
                             </div>
                             <div className="overflow-hidden">
-                                <p className="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed transform translate-y-0 opacity-100 transition-all duration-1000 delay-300">
+                                <p className="text-base sm:text-lg text-[#6B6B6B] mb-6 leading-relaxed transform translate-y-0 opacity-100 transition-all duration-1000 delay-300">
                                     Тренировки Людмилы Чипизубовой — это больше,
                                     чем фитнес. Это путь к силе, гармонии и
                                     уверенности в каждом движении. Персональный
