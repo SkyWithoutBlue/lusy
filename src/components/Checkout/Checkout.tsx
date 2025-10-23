@@ -103,7 +103,7 @@ export default function Checkout({ onClose }: CheckoutProps) {
                                 </div>
                             ))}
                         </div>
-                        <div className="mt-4 pt-4 border-t border-gray-200">
+                        <div className="mt-4! pt-4! border-t border-gray-200">
                             <div className="flex justify-between items-center text-lg font-bold">
                                 <span>Итого:</span>
                                 <span>{getTotalPrice().toLocaleString('ru-RU')}₽</span>
@@ -176,7 +176,7 @@ export default function Checkout({ onClose }: CheckoutProps) {
                             />
                         </div>
 
-                        <div className="flex gap-4 pt-4">
+                        <div className="flex gap-4 pt-4!">
                             <Button
                                 type="button"
                                 variant="outline"

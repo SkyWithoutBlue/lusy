@@ -364,15 +364,15 @@ export async function GET() {
 **Отобразите в UI:**
 ```typescript
 <div className="grid grid-cols-3 gap-4 mb-6">
-    <div className="bg-blue-50 p-4 rounded">
+    <div className="bg-blue-50 p-4! rounded">
         <p className="text-sm text-gray-600">Всего</p>
         <p className="text-2xl font-bold">{stats.total}</p>
     </div>
-    <div className="bg-green-50 p-4 rounded">
+    <div className="bg-green-50 p-4! rounded">
         <p className="text-sm text-gray-600">Сегодня</p>
         <p className="text-2xl font-bold">{stats.today}</p>
     </div>
-    <div className="bg-purple-50 p-4 rounded">
+    <div className="bg-purple-50 p-4! rounded">
         <p className="text-sm text-gray-600">За неделю</p>
         <p className="text-2xl font-bold">{stats.week}</p>
     </div>

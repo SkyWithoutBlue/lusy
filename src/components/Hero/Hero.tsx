@@ -40,7 +40,7 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="relative min-h-screen lg:h-screen flex items-center justify-center overflow-hidden pt-24 pb-12"
+            className="relative min-h-screen lg:h-screen flex items-center justify-center overflow-hidden pt-24! pb-12!"
         >
             <div className="absolute inset-0 bg-white">
                 <DecorativeElements elements={heroDecorativeElements} />
