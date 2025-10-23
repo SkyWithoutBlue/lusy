@@ -26,7 +26,8 @@ export default function Header() {
                                     href="/"
                                     className="text-1xl text-center font-bold text-[#2C2C2C] tracking-tight"
                                 >
-                                    Ludmila<br />
+                                    Lyudmila
+                                    <br />
                                     Chipizubova
                                 </Link>
                             </div>

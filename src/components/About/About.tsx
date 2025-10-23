@@ -38,24 +38,6 @@ const aboutDecorativeElements = [
     },
 ];
 
-const achievements = [
-    {
-        number: "8+",
-        label: "лет опыта",
-        description: "в кросс-тренинге и фитнесе",
-    },
-    {
-        number: "500+",
-        label: "довольных клиентов",
-        description: "достигли своих целей",
-    },
-    {
-        number: "24/7",
-        label: "здоровый образ жизни",
-        description: "мой образ жизни и философия",
-    },
-];
-
 export default function About() {
     return (
         <section
@@ -76,64 +58,77 @@ export default function About() {
                             </div>
                             <div className="space-y-6! text-[#6B6B6B] text-lg leading-relaxed">
                                 <p>
-                                    Привет! Меня зовут{" "}
+                                    Моя миссия — помочь людям раскрыть свой
+                                    потенциал через{" "}
                                     <span className="text-[#2C2C2C] font-semibold">
-                                        Людмила Чипизубова
+                                        движение, осознанность и баланс
                                     </span>
-                                    , и я персональный тренер с{" "}
-                                    <span className="text-[#2C2C2C] font-semibold">
-                                        8-летним стажем{" "}
-                                    </span>
-                                    в области кросс-тренинга и фитнеса.
+                                    . Я верю, что тренировки - это не просто
+                                    физическая активность, а путь к внутренней
+                                    силе и гармонии.
                                 </p>
 
-                                <p>
-                                    Моя страсть к здоровому образу жизни
-                                    началась много лет назад, и с тех пор я
-                                    помогаю людям раскрывать их потенциал через
-                                    правильные тренировки и сбалансированное
-                                    питание.
-                                </p>
+                                <div className="space-y-4!">
+                                    <p className="text-[#2C2C2C] font-semibold text-xl">
+                                        Мои направления:
+                                    </p>
 
-                                <p>
-                                    Я специализируюсь на{" "}
-                                    <span className="text-[#2C2C2C] font-semibold">
-                                        кросс-тренинге
-                                    </span>{" "}
-                                    — это не просто тренировки, это философия
-                                    жизни. Кросс-тренинг объединяет силу,
-                                    выносливость, гибкость и координацию,
-                                    создавая гармонично развитое тело.
-                                </p>
+                                    <p>
+                                        <span className="text-[#2C2C2C] font-semibold">
+                                            Кросс-тренинг
+                                        </span>{" "}
+                                        — система, где сочетаются сила,
+                                        выносливость, гибкость, скорость и
+                                        координация. Такие тренировки развивают
+                                        вас всесторонне и делают функционально
+                                        сильными не только в зале, но и в жизни.
+                                    </p>
 
-                                <p>
-                                    <span className="text-[#2C2C2C] font-semibold">
-                                        Здоровый образ жизни
-                                    </span>{" "}
-                                    — это не просто моя работа, это мой образ
-                                    жизни. Я практикую то, что проповедую:
-                                    правильное питание, регулярные тренировки,
-                                    достаточный сон и позитивное мышление.
-                                </p>
-                            </div>
+                                    <p>
+                                        <span className="text-[#2C2C2C] font-semibold">
+                                            Фулл-бади тренировки
+                                        </span>{" "}
+                                        — формат, при котором за одно занятие
+                                        задействуются все основные группы мышц.
+                                        Подходит для женщин, людей с
+                                        ограниченным временем, а также для фазы
+                                        сжигания жира или поддержания тонуса.
+                                    </p>
 
-                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6! py-8!">
-                                {achievements.map((achievement, index) => (
-                                    <div
-                                        key={index}
-                                        className="glass rounded-xl p-2! text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-                                    >
-                                        <div className="text-3xl sm:text-4xl font-bold text-[#2C2C2C] mb-2!">
-                                            {achievement.number}
-                                        </div>
-                                        <div className="text-lg font-semibold text-[#2C2C2C] mb-1!">
-                                            {achievement.label}
-                                        </div>
-                                        <div className="text-sm text-gray-600">
-                                            {achievement.description}
-                                        </div>
-                                    </div>
-                                ))}
+                                    <p>
+                                        Мои программы подходят для мужчин и
+                                        женщин любого уровня подготовки. С нуля
+                                        вы сможете научиться подтягиваться,
+                                        отжиматься и выполнять сложные
+                                        функциональные комплексы.
+                                    </p>
+
+                                    <p>
+                                        В персональном формате вы получите
+                                        индивидуальный план тренировок и
+                                        питания, который приведёт именно к вашей
+                                        цели.
+                                    </p>
+                                </div>
+
+                                <div className="space-y-4!">
+                                    <p className="text-[#2C2C2C] font-semibold text-xl">
+                                        Мой подход:
+                                    </p>
+
+                                    <p>
+                                        Для меня спорт — это не работа, а образ
+                                        жизни. Я живу тем, чему учу: питание,
+                                        регулярные тренировки, восстановление и
+                                        позитивное мышление.
+                                    </p>
+
+                                    <p className="text-[#2C2C2C] font-semibold">
+                                        Вместе мы сделаем ваше тело сильным, а
+                                        дух — непоколебимым. Начни путь к лучшей
+                                        версии себя уже сегодня!
+                                    </p>
+                                </div>
                             </div>
 
                             {/* Кнопки */}
@@ -159,7 +154,7 @@ export default function About() {
 
                     <div className="lg:col-span-5 order-2 lg:order-2">
                         <div className="relative">
-                        <div className="relative group">
+                            <div className="relative group">
                                 <div className="relative bg-white rounded-2xl p-4 sm:p-6 shadow-xl transform transition-transform duration-500 mx-auto">
                                     <div className="relative overflow-hidden rounded-2xl max-h-[380px] sm:max-h-[480px] lg:max-h-[700px]">
                                         <Image

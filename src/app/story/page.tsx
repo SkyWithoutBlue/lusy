@@ -4,15 +4,17 @@ import Footer from "@/components/Footer/Footer";
 import DecorativeElements from "@/components/ui/DecorativeElements";
 import Button from "@/components/ui/Button";
 import Link from "next/link";
-import Image from "next/image";
 import Gallery from "@/components/ui/Gallery";
+import StorySwiper from "@/components/ui/StorySwiper";
 
 export const metadata: Metadata = {
     title: "Моя история | Людмила Чипизубова - Персональный тренер",
-    description: "Узнайте историю Людмилы Чипизубовой - путь от мечты к реальности. Как страсть к фитнесу превратилась в миссию помогать людям становиться лучше.",
+    description:
+        "Узнайте историю Людмилы Чипизубовой - путь от мечты к реальности. Как страсть к фитнесу превратилась в миссию помогать людям становиться лучше.",
     openGraph: {
         title: "Моя история | Людмила Чипизубова",
-        description: "Путь от мечты к реальности. История о том, как страсть к фитнесу превратилась в миссию помогать людям становиться лучше.",
+        description:
+            "Путь от мечты к реальности. История о том, как страсть к спорту превратилась в миссию помогать людям становиться лучше.",
         images: ["/lusy.jpg"],
     },
 };
@@ -73,6 +75,68 @@ const galleryImages = [
     },
 ];
 
+const storyData = {
+    title: "Начало пути",
+    content: [
+        "Мой путь в спорте начался не с желания стать тренером, а с личной трансформации. Я столкнулась с теми же сомнениями и страхами, что и многие сегодня.",
+        "Первые шаги были непростыми. Каждая тренировка была вызовом, каждое упражнение — маленькой победой. Но именно эти трудности научили меня понимать своих подопечных на глубоком уровне.",
+        "Я поняла, что тренировки — это не только про красивое тело. Это про уверенность, дисциплину и любовь к себе.",
+    ],
+    images: [
+        {
+            src: "/lusy-domra.jpg",
+            alt: "Людмила Чипизубова с домрой",
+        },
+        {
+            src: "/lusy.jpg",
+            alt: "Людмила Чипизубова - тренировка",
+        },
+        {
+            src: "/lusy_gym.jpg",
+            alt: "Людмила в зале",
+        },
+    ],
+};
+
+const educationData = {
+    title: "Образование",
+    content: [
+        "Мой путь начался в мире искусства.",
+        "Я получила образование концертного исполнителя, преподавателя. Опыт работы на сцене научил меня дисциплине, контролю над телом и умению достигать гармонии между физикой и внутренним состоянием.",
+        "Со временем я поняла, что хочу помогать людям развивать тело и дух через движение.",
+    ],
+    images: [
+        {
+            src: "/lusy_2.jpg",
+            alt: "Тренировка",
+        },
+        {
+            src: "/lusy-no-bg-preview.png",
+            alt: "Людмила Чипизубова",
+        },
+    ],
+};
+
+const achievementsData = {
+    title: "Достижения",
+    achievements: [
+        "Чемпионка Забайкальского края по функциональному многоборью",
+        "Чемпионка Забайкальского края по дуатлон-кроссу",
+        "Победительница многочисленных соревнований по функциональному многоборью в Забайкальском крае",
+        'Победительница отбора на II Открытый кубок Дальнего Востока "Игры ГТО" — в личном и командном первенстве',
+    ],
+    images: [
+        {
+            src: "/lusy.jpg",
+            alt: "Людмила Чипизубова",
+        },
+        {
+            src: "/lusy_gym.jpg",
+            alt: "Тренировка в зале",
+        },
+    ],
+};
+
 export default function StoryPage() {
     return (
         <div className="min-h-screen bg-white">
@@ -86,10 +150,11 @@ export default function StoryPage() {
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C2C2C] mb-6!">
                             Моя история
                         </h1>
-                        <div className="w-full h-1 bg-gradient-to-r from-[#2C2C2C] to-gray-400 rounded-full mx-auto! mb-6!"></div>
+                        <div className="w-full h-1 bg-gradient-to-r-from-[#2C2C2C] to-gray-400 rounded-full mx-auto! mb-6!"></div>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto!">
-                            Путь от мечты к реальности. История о том, как страсть к фитнесу
-                            превратилась в миссию помогать людям становиться лучше.
+                            Путь от мечты к реальности. История о том, как
+                            страсть к фитнесу превратилась в миссию помогать
+                            людям становиться лучше.
                         </p>
                     </div>
                 </div>
@@ -98,83 +163,35 @@ export default function StoryPage() {
             {/* Основной контент */}
             <section className="relative">
                 <div className="mx-auto! max-w-5xl px-6! lg:px-8!">
-                    {/* Начало пути */}
+                    {/* История - текст статичный, фото в слайдере */}
                     <div className="mb-10!">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                            <div className="order-2 lg:order-1">
-                                <div className="glass rounded-2xl p-8! shadow-xl">
-                                    <h2 className="text-3xl font-bold text-[#2C2C2C] mb-6!">
-                                        Начало пути
-                                    </h2>
-                                    <p className="text-gray-700 leading-relaxed mb-4!">
-                                        Мой путь в фитнесе начался не с желания стать тренером,
-                                        а с личной трансформации. Я столкнулась с теми же
-                                        сомнениями и страхами, что и многие мои клиенты сегодня.
-                                    </p>
-                                    <p className="text-gray-700 leading-relaxed mb-4!">
-                                        Первые шаги были непростыми. Каждая тренировка была
-                                        вызовом, каждое упражнение — маленькой победой. Но именно
-                                        эти трудности научили меня понимать своих клиентов на
-                                        глубоком уровне.
-                                    </p>
-                                    <p className="text-gray-700 leading-relaxed">
-                                        Я поняла, что фитнес — это не только про красивое тело.
-                                        Это про уверенность, дисциплину и любовь к себе.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="order-1 lg:order-2">
-                                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
-                                    <Image
-                                        src="/lusy.jpg"
-                                        alt="Людмила Чипизубова"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                        <StorySwiper
+                            title={storyData.title}
+                            content={storyData.content}
+                            images={storyData.images}
+                            autoplay={true}
+                        />
                     </div>
 
-                    {/* Образование и развитие */}
+                    {/* Образование - текст статичный, фото в слайдере */}
                     <div className="mb-20!">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                            <div className="order-1">
-                                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
-                                    <Image
-                                        src="/lusy_2.jpg"
-                                        alt="Тренировка"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </div>
-                            </div>
-                            <div className="order-2">
-                                <div className="glass rounded-2xl p-8! shadow-xl">
-                                    <h2 className="text-3xl font-bold text-[#2C2C2C] mb-6">
-                                        Образование и развитие
-                                    </h2>
-                                    <p className="text-gray-700 leading-relaxed mb-4!">
-                                        Я не остановилась на личных достижениях. Получила
-                                        профессиональное образование, прошла множество курсов
-                                        и сертификаций по различным направлениям фитнеса.
-                                    </p>
-                                    <p className="text-gray-700 leading-relaxed mb-4!">
-                                        Изучала анатомию, физиологию, психологию мотивации.
-                                        Каждый новый навык помогал мне лучше понимать, как
-                                        работает человеческое тело и как достигать максимальных
-                                        результатов безопасно и эффективно.
-                                    </p>
-                                    <p className="text-gray-700 leading-relaxed">
-                                        Сегодня я продолжаю учиться, потому что фитнес-индустрия
-                                        постоянно развивается, и я хочу давать своим клиентам
-                                        только лучшее.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <StorySwiper
+                            title={educationData.title}
+                            content={educationData.content}
+                            images={educationData.images}
+                            autoplay={true}
+                            imagePosition="left"
+                        />
                     </div>
-
+                    {/* Достижения - текст статичный (список), фото в слайдере */}
+                    <div className="mb-10!">
+                        <StorySwiper
+                            title={achievementsData.title}
+                            achievements={achievementsData.achievements}
+                            images={achievementsData.images}
+                            autoplay={true}
+                        />
+                    </div>
                     {/* Философия тренировок */}
                     <div className="mb-20!">
                         <div className="glass rounded-2xl p-12! shadow-xl text-center">
@@ -183,17 +200,20 @@ export default function StoryPage() {
                             </h2>
                             <div className="max-w-3xl mx-auto!">
                                 <p className="text-lg text-gray-700 leading-relaxed mb-6!">
-                                    Я верю, что каждый человек уникален, и не существует
-                                    универсального подхода к тренировкам. Моя задача — найти
-                                    тот путь, который подходит именно вам.
+                                    Я верю, что каждый человек уникален, и не
+                                    существует универсального подхода к
+                                    тренировкам. Моя задача — найти тот путь,
+                                    который подходит именно вам.
                                 </p>
                                 <p className="text-lg text-gray-700 leading-relaxed mb-6!">
-                                    Тренировки должны приносить радость, а не быть наказанием.
-                                    Я создаю программы, которые мотивируют, вдохновляют и
-                                    помогают влюбиться в процесс.
+                                    Тренировки должны приносить радость, а не
+                                    быть наказанием. Я создаю программы, которые
+                                    мотивируют, вдохновляют и помогают влюбиться
+                                    в процесс.
                                 </p>
                                 <p className="text-lg font-semibold text-[#2C2C2C]">
-                                    "Сильное тело, уверенный дух, ваша лучшая версия"
+                                    "Сильное тело, уверенный дух, ваша лучшая
+                                    версия"
                                 </p>
                             </div>
                         </div>
@@ -205,13 +225,12 @@ export default function StoryPage() {
                             Моменты из моей работы
                         </h2>
                         <p className="text-center text-gray-600 mb-12! max-w-2xl mx-auto!">
-                            Каждая тренировка — это шаг к вашей цели. Посмотрите, как проходят
-                            мои занятия и результаты моих клиентов.
+                            Каждая тренировка — это шаг к вашей цели.
+                            Посмотрите, как проходят мои занятия и результаты
+                            моих клиентов.
                         </p>
                         <Gallery images={galleryImages} autoplay={true} />
                     </div>
-
-
 
                     {/* Призыв к действию */}
                     <div className="text-center mb-10!">
@@ -220,8 +239,9 @@ export default function StoryPage() {
                                 Готовы начать свою историю?
                             </h2>
                             <p className="text-lg text-gray-700 mb-8! max-w-2xl mx-auto!">
-                                Каждая великая история начинается с первого шага.
-                                Давайте вместе создадим вашу историю успеха.
+                                Каждая великая история начинается с первого
+                                шага. Давайте вместе создадим вашу историю
+                                успеха.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Link href="/#services">
