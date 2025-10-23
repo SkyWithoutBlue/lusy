@@ -15,12 +15,21 @@ export async function GET() {
             );
         }
 
+        // Проверка роли администратора
+        if (session.user.role !== "admin") {
+            return NextResponse.json(
+                { error: "Доступ запрещён. Требуются права администратора." },
+                { status: 403 }
+            );
+        }
+
         // Получение всех пользователей
         const users = await prisma.user.findMany({
             select: {
                 id: true,
                 email: true,
                 name: true,
+                role: true,
                 createdAt: true,
                 updatedAt: true,
                 _count: {

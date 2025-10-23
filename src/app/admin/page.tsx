@@ -8,6 +8,7 @@ type User = {
     id: string;
     email: string;
     name: string | null;
+    role: string;
     createdAt: string;
     updatedAt: string;
     _count: {
@@ -108,6 +109,9 @@ export default function AdminPage() {
                                             Имя
                                         </th>
                                         <th className="px-6! py-3! text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Роль
+                                        </th>
+                                        <th className="px-6! py-3! text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             Дата регистрации
                                         </th>
                                         <th className="px-6! py-3! text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -129,6 +133,15 @@ export default function AdminPage() {
                                             </td>
                                             <td className="px-6! py-4! whitespace-nowrap text-sm text-gray-500">
                                                 {user.name || "—"}
+                                            </td>
+                                            <td className="px-6! py-4! whitespace-nowrap text-sm">
+                                                <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                                                    user.role === "admin"
+                                                        ? "bg-purple-100 text-purple-800"
+                                                        : "bg-gray-100 text-gray-800"
+                                                }`}>
+                                                    {user.role === "admin" ? "Администратор" : "Пользователь"}
+                                                </span>
                                             </td>
                                             <td className="px-6! py-4! whitespace-nowrap text-sm text-gray-500">
                                                 {new Date(
