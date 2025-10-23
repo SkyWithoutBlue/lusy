@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://lusy-trainer.ru/sitemap.xml
+Sitemap: https://chipizubova.online/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
@@ -12,9 +12,8 @@ Disallow: /api/
 Disallow: /admin/
 Disallow: /_next/
 Disallow: /auth/
+Disallow: /profile
 
 # Allow important pages
 Allow: /
-Allow: /about
-Allow: /services
-Allow: /contact
+Allow: /story

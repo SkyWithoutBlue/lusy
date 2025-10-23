@@ -176,7 +176,7 @@ export default function RegisterForm() {
                         type="submit"
                         variant="primary"
                         size="lg"
-                        className="w-full group relative overflow-hidden"
+                        className="w-full group relative overflow-hidden mt-6!"
                         disabled={isLoading}
                     >
                         <span className="relative z-10">

@@ -45,7 +45,7 @@ export default function SignUpPage() {
             <div className="hidden sm:block absolute bottom-0 left-0 w-32 h-32 border-b-4 border-l-4 border-gray-300"></div>
             <div className="hidden sm:block absolute bottom-0 right-0 w-32 h-32 border-b-4 border-r-4 border-gray-300"></div>
 
-            <div className="relative z-10 min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+            <div className="relative z-10 min-h-screen flex items-center justify-center py-12! px-4! sm:px-6! lg:px-8!">
                 <RegisterForm />
             </div>
         </div>

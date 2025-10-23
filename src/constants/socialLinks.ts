@@ -7,27 +7,22 @@ export interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
     {
+        name: "VK",
+        href: "https://vk.com/lyudmila_chipizubova",
+        icon: "/images/VK.svg",
+        alt: "VK",
+    },
+    {
         name: "Instagram",
-        href: "#",
+        href: "https://www.instagram.com/ludmila_cipizubova_/",
         icon: "/images/Instagram.svg",
         alt: "Instagram",
     },
     {
         name: "Telegram",
-        href: "#",
+        href: "https://t.me/Chipizubova_Lyudmila",
         icon: "/images/Telegram.svg",
         alt: "Telegram",
     },
-    {
-        name: "VK",
-        href: "#",
-        icon: "/images/VK.svg",
-        alt: "VK",
-    },
-    {
-        name: "WhatsApp",
-        href: "#",
-        icon: "/images/WhatsApp.svg",
-        alt: "WhatsApp",
-    },
+
 ];

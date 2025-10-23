@@ -1,0 +1,29 @@
+{
+    "name": "Людмила Чипизубова - Персональный тренер",
+    "short_name": "Л. Чипизубова",
+    "description": "Онлайн марафоны для похудения, персональные тренировки, кросс-тренинг",
+    "icons": [
+        {
+            "src": "/web-app-manifest-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/web-app-manifest-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/favicon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#9A8A88",
+    "background_color": "#F5F1EE",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/"
+}

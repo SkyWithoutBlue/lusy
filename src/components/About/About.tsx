@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import DecorativeElements from "@/components/ui/DecorativeElements";
 import Button from "@/components/ui/Button";
 
@@ -137,16 +138,18 @@ export default function About() {
 
                             {/* Кнопки */}
                             <div className="flex flex-col sm:flex-row gap-4 pt-4!">
-                                <Button
-                                    variant="primary"
-                                    size="lg"
-                                    className="group relative overflow-hidden"
-                                >
-                                    <span className="relative z-10">
-                                        Моя история
-                                    </span>
-                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                                </Button>
+                                <Link href="/story">
+                                    <Button
+                                        variant="primary"
+                                        size="lg"
+                                        className="group relative overflow-hidden"
+                                    >
+                                        <span className="relative z-10">
+                                            Моя история
+                                        </span>
+                                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                                    </Button>
+                                </Link>
                                 <Button variant="secondary" size="lg">
                                     Связаться со мной
                                 </Button>

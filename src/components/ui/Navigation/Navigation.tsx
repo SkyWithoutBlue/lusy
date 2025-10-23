@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface NavigationItem {
     href: string;
     label: string;
@@ -30,7 +32,7 @@ export default function Navigation({
                 className={isMobile ? "" : "flex items-center space-x-1 gap-10"}
             >
                 {items.map((item) => (
-                    <a
+                    <Link
                         key={item.href}
                         href={item.href}
                         className={baseClasses}
@@ -40,7 +42,7 @@ export default function Navigation({
                         {!isMobile && (
                             <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-[#2C2C2C] transition-all duration-300 group-hover:w-4"></span>
                         )}
-                    </a>
+                    </Link>
                 ))}
             </div>
         </nav>
