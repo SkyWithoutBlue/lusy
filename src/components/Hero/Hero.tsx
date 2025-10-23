@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import DecorativeElements from "@/components/ui/DecorativeElements";
-import ScrollIndicator from "@/components/ui/ScrollIndicator";
 
 const heroDecorativeElements = [
     {
@@ -118,7 +117,6 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <ScrollIndicator />
             <div className="hidden sm:block absolute top-0 left-0 w-32 h-32 border-t-4 border-l-4 border-gray-300"></div>
             <div className="hidden sm:block absolute top-0 right-0 w-32 h-32 border-t-4 border-r-4 border-gray-300"></div>
             <div className="hidden sm:block absolute bottom-0 left-0 w-32 h-32 border-b-4 border-l-4 border-gray-300"></div>
