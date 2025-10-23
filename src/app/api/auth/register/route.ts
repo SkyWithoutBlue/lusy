@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-// import { prisma } from "@/lib/prisma";
-// import bcrypt from "bcryptjs";
+import { prisma } from "@/lib/prisma";
+import bcrypt from "bcryptjs";
 import { z } from "zod";
 
 const registerSchema = z.object({
@@ -24,17 +24,40 @@ export async function POST(request: NextRequest) {
 
         const { email, password, name } = validatedFields.data;
 
-        // Временно для тестирования - имитируем успешную регистрацию
-        // TODO: Подключить к базе данных когда она будет настроена
+        // Проверка существующего пользователя
+        const existingUser = await prisma.user.findUnique({
+            where: { email },
+        });
+
+        if (existingUser) {
+            return NextResponse.json(
+                { error: "Пользователь с таким email уже существует" },
+                { status: 409 }
+            );
+        }
+
+        // Хеширование пароля
+        const hashedPassword = await bcrypt.hash(password, 12);
+
+        // Создание пользователя
+        const user = await prisma.user.create({
+            data: {
+                email,
+                password: hashedPassword,
+                name: name || null,
+            },
+            select: {
+                id: true,
+                email: true,
+                name: true,
+                createdAt: true,
+            },
+        });
+
         return NextResponse.json(
             {
                 message: "Пользователь успешно создан",
-                user: {
-                    id: "1",
-                    email: email,
-                    name: name || null,
-                    createdAt: new Date().toISOString(),
-                },
+                user,
             },
             { status: 201 }
         );

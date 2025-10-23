@@ -1,8 +1,8 @@
 import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-// import { PrismaAdapter } from "@auth/prisma-adapter";
-// import { prisma } from "./prisma";
-// import bcrypt from "bcryptjs";
+import { PrismaAdapter } from "@auth/prisma-adapter";
+import { prisma } from "./prisma";
+import bcrypt from "bcryptjs";
 import { z } from "zod";
 
 const loginSchema = z.object({
@@ -11,7 +11,7 @@ const loginSchema = z.object({
 });
 
 export const authOptions: NextAuthOptions = {
-    // adapter: PrismaAdapter(prisma) as any, // Временно отключено до настройки БД
+    adapter: PrismaAdapter(prisma) as any,
     providers: [
         CredentialsProvider({
             name: "credentials",
@@ -33,20 +33,30 @@ export const authOptions: NextAuthOptions = {
 
                     const { email, password } = validatedFields.data;
 
-                    // Временно для тестирования - простой проверка
-                    // TODO: Подключить к базе данных когда она будет настроена
-                    if (
-                        email === "test@test.com" &&
-                        password === "password123"
-                    ) {
-                        return {
-                            id: "1",
-                            email: email,
-                            name: "Test User",
-                        };
+                    // Поиск пользователя в базе данных
+                    const user = await prisma.user.findUnique({
+                        where: { email },
+                    });
+
+                    if (!user || !user.password) {
+                        return null;
                     }
 
-                    return null;
+                    // Проверка пароля
+                    const isPasswordValid = await bcrypt.compare(
+                        password,
+                        user.password
+                    );
+
+                    if (!isPasswordValid) {
+                        return null;
+                    }
+
+                    return {
+                        id: user.id,
+                        email: user.email,
+                        name: user.name ?? undefined,
+                    } as any;
                 } catch (error) {
                     console.error("Auth error:", error);
                     return null;
@@ -78,4 +88,5 @@ export const authOptions: NextAuthOptions = {
     pages: {
         signIn: "/auth/signin",
     },
+    secret: process.env.NEXTAUTH_SECRET,
 };
