@@ -84,16 +84,25 @@ const storyData = {
     ],
     images: [
         {
+            src: "/lusy-transformation.jpg",
+            alt: "Трансформация Людмилы",
+        },
+        {
             src: "/lusy-domra.jpg",
-            alt: "Людмила Чипизубова с домрой",
+            alt: "Людмила Чипизубова с гитарой",
         },
         {
-            src: "/lusy.jpg",
-            alt: "Людмила Чипизубова - тренировка",
+            src: "/lusy-thin.jpg",
+            alt: "Людмила Чипизубова с гитарой",
         },
         {
-            src: "/lusy_gym.jpg",
-            alt: "Людмила в зале",
+            src: "/lusy-study.jpg",
+            alt: "Людмила Чипизубова с гитарой",
+        },
+
+        {
+            src: "/lusy-training.jpg",
+            alt: "Людмила после тренировки",
         },
     ],
 };
@@ -107,12 +116,20 @@ const educationData = {
     ],
     images: [
         {
-            src: "/lusy_2.jpg",
-            alt: "Тренировка",
+            src: "/lusy-5345.jpg",
+            alt: "Людмила раньше",
         },
         {
-            src: "/lusy-no-bg-preview.png",
-            alt: "Людмила Чипизубова",
+            src: "/lusy-4321.jpg",
+            alt: "Людмила раньше",
+        },
+        {
+            src: "/lusy-2351.jpg",
+           alt: "Людмила раньше",
+        },
+        {
+            src: "/lusy-2377.jpg",
+            alt: "Людмила раньше",
         },
     ],
 };
@@ -127,13 +144,27 @@ const achievementsData = {
     ],
     images: [
         {
-            src: "/lusy.jpg",
-            alt: "Людмила Чипизубова",
+            src: "/lusy-mask.jpg",
+            alt: "Людмила на фотосессии",
+        },
+        {
+            src: "/lusy-photosession.jpg",
+            alt: "Людмила на фотосессии",
         },
         {
             src: "/lusy_gym.jpg",
-            alt: "Тренировка в зале",
+            alt: "Людмида в зале",
         },
+        {
+            src: "/lusy-with-pistol.jpg",
+            alt: "Людмила на фотосессии",
+        },
+        {
+            src: "/lusy-dress.jpg",
+            alt: "Людмила на фотосессии",
+        },
+
+
     ],
 };
 
@@ -256,17 +287,11 @@ export default function StoryPage() {
                                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                                     </Button>
                                 </Link>
-                                <Link href="/#contact">
-                                    <Button variant="secondary" size="lg">
-                                        Связаться со мной
-                                    </Button>
-                                </Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
             <Footer />
         </div>
     );

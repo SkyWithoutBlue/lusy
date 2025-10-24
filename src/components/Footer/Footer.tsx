@@ -22,6 +22,13 @@ export default function Footer() {
                     >
                         Политика конфиденциальности
                     </Link>
+                    <span className="hidden sm:inline text-gray-400">•</span>
+                    <Link
+                        href="/offer"
+                        className="text-sm text-gray-600 hover:text-[#2C2C2C] transition-colors underline"
+                    >
+                        Договор оферты
+                    </Link>
                 </div>
             </div>
         </footer>
