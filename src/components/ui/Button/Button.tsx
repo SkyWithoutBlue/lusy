@@ -15,10 +15,11 @@ export default function Button({
     ...props
 }: ButtonProps) {
     const baseClasses =
-        "font-semibold rounded-full transition-all duration-300 focus:outline-none focus:ring-0 active:ring-0 focus-visible:outline-none cursor-pointer flex flex-row-reverse  gap-4! rounded-full items-center justify-center";
+        "font-semibold rounded-full transition-all duration-300 focus:outline-none focus:ring-0 active:ring-0 focus-visible:outline-none cursor-pointer flex flex-row-reverse  gap-4! rounded-full items-center justify-center mx-auto!";
 
     const variantClasses = {
-        primary: "bg-[#2C2C2C] text-white hover:bg-[#404040] hover:scale-105 hover:shadow-2xl",
+        primary:
+            "bg-[#2C2C2C] text-white hover:bg-[#404040] hover:scale-105 hover:shadow-2xl",
         secondary:
             "bg-transparent border-2 border-[#2C2C2C] text-[#2C2C2C] hover:bg-[#2C2C2C] hover:text-white hover:scale-105",
         outline:

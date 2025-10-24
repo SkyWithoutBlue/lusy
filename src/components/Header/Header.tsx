@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Navigation from "@/components/ui/Navigation";
-import Button from "@/components/ui/Button";
 import CartIcon from "@/components/ui/CartIcon";
 import { ProfileIcon } from "@/components/ui";
 import { navigationItems } from "@/constants/navigation";
@@ -21,7 +20,7 @@ export default function Header() {
                 <div className="mx-auto! max-w-7xl px-6! lg:px-8">
                     <div className="flex justify-between items-center h-20">
                         <div className="flex-shrink-0">
-                            <div className="flex items-center space-x-3">
+                            <div className="flex items-center space-x-3!">
                                 <Link
                                     href="/"
                                     className="text-1xl text-center font-bold text-[#2C2C2C] tracking-tight"
@@ -44,7 +43,7 @@ export default function Header() {
                             <ProfileIcon />
                             <button
                                 onClick={toggleMenu}
-                                className="inline-flex items-center justify-center p-3 rounded-xl text-gray-700 hover:text-[#2C2C2C] hover:bg-gray-50 transition-all duration-300 focus:outline-none focus:ring-0"
+                                className="inline-flex items-center justify-center p-3! rounded-xl text-gray-700 hover:text-[#2C2C2C] hover:bg-gray-50 transition-all duration-300 focus:outline-none focus:ring-0"
                                 aria-expanded={isMenuOpen}
                             >
                                 <span className="sr-only">
@@ -81,24 +80,12 @@ export default function Header() {
                 </div>
                 {isMenuOpen && (
                     <div className="lg:hidden">
-                        <div className="px-6 py-4 bg-white border-t border-gray-100 shadow-lg">
+                        <div className="px-6! py-4! bg-white border-t border-gray-100 shadow-lg">
                             <Navigation
                                 items={navigationItems}
                                 isMobile={true}
                                 onItemClick={() => setIsMenuOpen(false)}
                             />
-                            <div className="p-6! pt-6!">
-                                <Button
-                                    variant="primary"
-                                    size="lg"
-                                    className="w-full group relative overflow-hidden"
-                                >
-                                    <span className="relative z-10">
-                                        Записаться
-                                    </span>
-                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                                </Button>
-                            </div>
                         </div>
                     </div>
                 )}

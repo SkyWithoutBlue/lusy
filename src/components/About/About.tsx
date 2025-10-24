@@ -132,12 +132,12 @@ export default function About() {
                             </div>
 
                             {/* Кнопки */}
-                            <div className="flex flex-col sm:flex-row gap-4 pt-4!">
+                            <div className="flex flex-col sm:flex-row gap-4 pt-4! justify-center">
                                 <Link href="/story">
                                     <Button
                                         variant="primary"
                                         size="lg"
-                                        className="group relative overflow-hidden"
+                                        className="group relative  overflow-hidden"
                                     >
                                         <span className="relative z-10">
                                             Моя история
@@ -145,7 +145,6 @@ export default function About() {
                                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                                     </Button>
                                 </Link>
-
                             </div>
                         </div>
                     </div>

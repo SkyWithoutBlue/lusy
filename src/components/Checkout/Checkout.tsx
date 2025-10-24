@@ -48,9 +48,9 @@ export default function Checkout({ onClose }: CheckoutProps) {
 
     if (isSuccess) {
         return (
-            <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-                <div className="bg-white rounded-2xl p-8 max-w-md w-full text-center">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4!">
+                <div className="bg-white rounded-2xl p-8! max-w-md w-full text-center">
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto! mb-4!">
                         <svg
                             className="w-8 h-8 text-green-600"
                             fill="none"
@@ -65,10 +65,10 @@ export default function Checkout({ onClose }: CheckoutProps) {
                             />
                         </svg>
                     </div>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-2!">
                         Заказ оформлен!
                     </h2>
-                    <p className="text-gray-600 mb-6">
+                    <p className="text-gray-600 mb-6!">
                         Спасибо за ваш заказ! Я свяжусь с вами в ближайшее время
                         для уточнения деталей.
                     </p>
@@ -247,7 +247,7 @@ export default function Checkout({ onClose }: CheckoutProps) {
                             >
                                 {isSubmitting ? (
                                     <div className="flex items-center justify-center">
-                                        <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
+                                        <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2!"></div>
                                         Обработка...
                                     </div>
                                 ) : (
