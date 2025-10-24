@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SocialLinks from "@/components/ui/SocialLinks";
 import { socialLinks } from "@/constants/socialLinks";
 
@@ -9,10 +10,19 @@ export default function Footer() {
                     Lyudmila <br /> Chipizubova
                 </div>
                 <SocialLinks links={socialLinks} />
-                <p className="text-sm text-gray-600 text-center">
-                    © {new Date().getFullYear()} Lyudmila Chipizubova. Все права
-                    защищены.
-                </p>
+                <div className="flex flex-col sm:flex-row gap-4 items-center">
+                    <p className="text-sm text-gray-600">
+                        © {new Date().getFullYear()} Lyudmila Chipizubova. Все
+                        права защищены.
+                    </p>
+                    <span className="hidden sm:inline text-gray-400">•</span>
+                    <Link
+                        href="/privacy"
+                        className="text-sm text-gray-600 hover:text-[#2C2C2C] transition-colors underline"
+                    >
+                        Политика конфиденциальности
+                    </Link>
+                </div>
             </div>
         </footer>
     );
