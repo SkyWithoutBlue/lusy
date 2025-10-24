@@ -69,19 +69,7 @@ export default function Hero() {
                                 </p>
                             </div>
                             <div className="flex flex-col mt-4! sm:flex-row gap-4 transform translate-y-0 opacity-100 transition-all duration-1000 delay-500 justify-center lg:justify-start items-center">
-                                <Button
-                                    variant="primary"
-                                    size="lg"
-                                    className="group relative overflow-hidden"
-                                >
-                                    <span className="relative z-10">
-                                        Узнать больше
-                                    </span>
-                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                                </Button>
-                                <Button variant="secondary" size="lg">
-                                    Связаться со мной
-                                </Button>
+
                             </div>
                         </div>
                     </div>

@@ -145,9 +145,7 @@ export default function About() {
                                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                                     </Button>
                                 </Link>
-                                <Button variant="secondary" size="lg">
-                                    Связаться со мной
-                                </Button>
+
                             </div>
                         </div>
                     </div>
