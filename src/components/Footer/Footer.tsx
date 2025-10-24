@@ -11,10 +11,6 @@ export default function Footer() {
                 </div>
                 <SocialLinks links={socialLinks} />
                 <div className="flex flex-col sm:flex-row gap-4 items-center">
-                    <p className="text-sm text-gray-600">
-                        © {new Date().getFullYear()} Lyudmila Chipizubova. Все
-                        права защищены.
-                    </p>
                     <span className="hidden sm:inline text-gray-400">•</span>
                     <Link
                         href="/privacy"
@@ -30,6 +26,10 @@ export default function Footer() {
                         Договор оферты
                     </Link>
                 </div>
+                <p className="text-sm text-gray-600">
+                        © {new Date().getFullYear()} Lyudmila Chipizubova. Все
+                        права защищены.
+                    </p>
             </div>
         </footer>
     );
