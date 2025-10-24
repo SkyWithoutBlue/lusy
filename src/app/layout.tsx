@@ -60,6 +60,7 @@ export default function RootLayout({
                 <meta name="revisit-after" content="7 days" />
                 <meta name="distribution" content="global" />
                 <meta name="rating" content="general" />
+                <meta name="google-site-verification" content="lfHQ2aGh-CVXNOgF4j0h_eLNGXL4qR6sNq-57kVs_RQ" />
                 <meta name="yandex-verification" content="3cfec48509f34676" />
             </head>
             <body className={`${geistSans.variable} ${geistMono.variable}`}>
