@@ -31,7 +31,7 @@ export const sendEmail = async ({
         const transporter = createTransporter();
 
         const info = await transporter.sendMail({
-            from: `"${process.env.EMAIL_FROM_NAME || "Lusy Fitness"}" <${
+            from: `"${process.env.EMAIL_FROM_NAME || "Chipizubova online"}" <${
                 process.env.EMAIL_FROM || process.env.EMAIL_USER
             }>`,
             to,
@@ -54,7 +54,7 @@ export const getPasswordResetEmailTemplate = (
     userName?: string
 ) => {
     return {
-        subject: "Восстановление пароля - Lusy Fitness",
+        subject: "Восстановление пароля - Chipizubova online",
         html: `
 <!DOCTYPE html>
 <html lang="ru">
@@ -71,7 +71,7 @@ export const getPasswordResetEmailTemplate = (
                     <!-- Header -->
                     <tr>
                         <td style="background: linear-gradient(135deg, #2C2C2C 0%, #4a4a4a 100%); padding: 40px 30px; text-align: center;">
-                            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">Lusy Fitness</h1>
+                            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">Chipizubova online</h1>
                         </td>
                     </tr>
 
@@ -132,7 +132,7 @@ export const getPasswordResetEmailTemplate = (
                     <tr>
                         <td style="background-color: #f8f8f8; padding: 30px; text-align: center; border-top: 1px solid #e0e0e0;">
                             <p style="margin: 0 0 10px; color: #999; font-size: 14px;">
-                                © ${new Date().getFullYear()} Lusy Fitness. Все права защищены.
+                                © ${new Date().getFullYear()} Chipizubova online. Все права защищены.
                             </p>
                             <p style="margin: 0; color: #999; font-size: 12px;">
                                 Это автоматическое письмо. Пожалуйста, не отвечайте на него.
@@ -147,7 +147,7 @@ export const getPasswordResetEmailTemplate = (
 </html>
         `,
         text: `
-Восстановление пароля - Lusy Fitness
+Восстановление пароля - Chipizubova online
 
 ${userName ? `Привет, ${userName}!` : "Здравствуйте!"}
 
@@ -160,7 +160,7 @@ ${resetUrl}
 
 Если вы не запрашивали восстановление пароля, просто проигнорируйте это письмо. Ваш пароль останется без изменений.
 
-© ${new Date().getFullYear()} Lusy Fitness. Все права защищены.
+© ${new Date().getFullYear()} Chipizubova online. Все права защищены.
         `,
     };
 };
@@ -168,7 +168,7 @@ ${resetUrl}
 // Шаблон письма об успешной смене пароля
 export const getPasswordChangedEmailTemplate = (userName?: string) => {
     return {
-        subject: "Пароль успешно изменен - Lusy Fitness",
+        subject: "Пароль успешно изменен - Chipizubova online",
         html: `
 <!DOCTYPE html>
 <html lang="ru">
@@ -184,7 +184,7 @@ export const getPasswordChangedEmailTemplate = (userName?: string) => {
                 <table role="presentation" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                     <tr>
                         <td style="background: linear-gradient(135deg, #2C2C2C 0%, #4a4a4a 100%); padding: 40px 30px; text-align: center;">
-                            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">Lusy Fitness</h1>
+                            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">Chipizubova online</h1>
                         </td>
                     </tr>
 
@@ -213,7 +213,7 @@ export const getPasswordChangedEmailTemplate = (userName?: string) => {
                     <tr>
                         <td style="background-color: #f8f8f8; padding: 30px; text-align: center; border-top: 1px solid #e0e0e0;">
                             <p style="margin: 0 0 10px; color: #999; font-size: 14px;">
-                                © ${new Date().getFullYear()} Lusy Fitness. Все права защищены.
+                                © ${new Date().getFullYear()} Chipizubova online. Все права защищены.
                             </p>
                         </td>
                     </tr>
@@ -225,7 +225,7 @@ export const getPasswordChangedEmailTemplate = (userName?: string) => {
 </html>
         `,
         text: `
-Пароль успешно изменен - Lusy Fitness
+Пароль успешно изменен - Chipizubova online
 
 ${userName ? `Привет, ${userName}!` : "Здравствуйте!"}
 
@@ -233,7 +233,7 @@ ${userName ? `Привет, ${userName}!` : "Здравствуйте!"}
 
 Если вы не меняли пароль, немедленно свяжитесь с нами.
 
-© ${new Date().getFullYear()} Lusy Fitness. Все права защищены.
+© ${new Date().getFullYear()} Chipizubova online. Все права защищены.
         `,
     };
 };
