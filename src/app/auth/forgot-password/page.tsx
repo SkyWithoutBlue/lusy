@@ -51,29 +51,29 @@ export default function ForgotPasswordPage() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 px-4 py-12">
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 px-4! py-12!">
             <div className="max-w-md w-full">
                 <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                     {/* Header */}
-                    <div className="bg-gradient-to-r from-[#2C2C2C] to-[#4a4a4a] px-8 py-6">
+                    <div className="bg-gradient-to-r from-[#2C2C2C] to-[#4a4a4a] px-8! py-6!">
                         <h1 className="text-2xl font-bold text-white text-center">
                             Восстановление пароля
                         </h1>
                     </div>
 
                     {/* Content */}
-                    <div className="px-8 py-8">
-                        <p className="text-gray-600 text-center mb-6">
+                    <div className="px-8! py-8!">
+                        <p className="text-gray-600 text-center mb-6!">
                             Введите email, который вы использовали при
                             регистрации. Мы отправим вам ссылку для сброса
                             пароля.
                         </p>
 
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        <form onSubmit={handleSubmit} className="space-y-6!">
                             <div>
                                 <label
                                     htmlFor="email"
-                                    className="block text-sm font-medium text-gray-700 mb-2"
+                                    className="block text-sm font-medium text-gray-700 mb-2!"
                                 >
                                     Email
                                 </label>
@@ -84,14 +84,14 @@ export default function ForgotPasswordPage() {
                                     onChange={(e) => setEmail(e.target.value)}
                                     required
                                     disabled={isLoading}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2C2C2C] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-colors"
+                                    className="w-full px-4! py-3! border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2C2C2C] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-colors"
                                     placeholder="your@email.com"
                                 />
                             </div>
 
                             {message && (
                                 <div
-                                    className={`p-4 rounded-lg ${
+                                    className={`p-4! rounded-lg ${
                                         message.type === "success"
                                             ? "bg-green-50 border border-green-200"
                                             : "bg-red-50 border border-red-200"
@@ -116,13 +116,11 @@ export default function ForgotPasswordPage() {
                                 className="w-full"
                                 disabled={isLoading || !email}
                             >
-                                {isLoading
-                                    ? "Отправка..."
-                                    : "Отправить ссылку"}
+                                {isLoading ? "Отправка..." : "Отправить ссылку"}
                             </Button>
                         </form>
 
-                        <div className="mt-6 text-center space-y-2">
+                        <div className="mt-6! text-center space-y-2!">
                             <Link
                                 href="/auth/signin"
                                 className="block text-sm text-[#2C2C2C] hover:text-gray-700 font-medium transition-colors"
@@ -143,7 +141,7 @@ export default function ForgotPasswordPage() {
                 </div>
 
                 {/* Info Card */}
-                <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div className="mt-6! bg-blue-50 border border-blue-200 rounded-lg p-4!">
                     <div className="flex items-start">
                         <div className="shrink-0">
                             <svg
@@ -158,12 +156,12 @@ export default function ForgotPasswordPage() {
                                 />
                             </svg>
                         </div>
-                        <div className="ml-3">
+                        <div className="ml-3!">
                             <h3 className="text-sm font-medium text-blue-800">
                                 Важная информация
                             </h3>
-                            <div className="mt-2 text-sm text-blue-700">
-                                <ul className="list-disc list-inside space-y-1">
+                            <div className="mt-2! text-sm text-blue-700">
+                                <ul className="list-disc list-inside space-y-1!">
                                     <li>Ссылка действительна 1 час</li>
                                     <li>
                                         Проверьте папку "Спам", если письмо не
@@ -182,4 +180,3 @@ export default function ForgotPasswordPage() {
         </div>
     );
 }
-

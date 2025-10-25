@@ -94,17 +94,17 @@ function ResetPasswordForm() {
             <div className="max-w-md w-full">
                 <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                     {/* Header */}
-                    <div className="bg-gradient-to-r from-[#2C2C2C] to-[#4a4a4a] px-8 py-6">
+                    <div className="bg-gradient-to-r from-[#2C2C2C] to-[#4a4a4a] px-8! py-6!">
                         <h1 className="text-2xl font-bold text-white text-center">
                             Новый пароль
                         </h1>
                     </div>
 
                     {/* Content */}
-                    <div className="px-8 py-8">
+                    <div className="px-8! py-8!">
                         {!token ? (
-                            <div className="text-center space-y-4">
-                                <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                            <div className="text-center space-y-4!">
+                                <div className="bg-red-50 border border-red-200 rounded-lg p-4!">
                                     <p className="text-sm text-red-800">
                                         {message?.text ||
                                             "Недействительная ссылка"}
@@ -118,7 +118,7 @@ function ResetPasswordForm() {
                             </div>
                         ) : (
                             <>
-                                <p className="text-gray-600 text-center mb-6">
+                                <p className="text-gray-600 text-center mb-6!">
                                     Введите новый пароль для вашего аккаунта
                                 </p>
 
@@ -129,7 +129,7 @@ function ResetPasswordForm() {
                                     <div>
                                         <label
                                             htmlFor="password"
-                                            className="block text-sm font-medium text-gray-700 mb-2"
+                                            className="block text-sm font-medium text-gray-700 mb-2!"
                                         >
                                             Новый пароль
                                         </label>
@@ -147,7 +147,7 @@ function ResetPasswordForm() {
                                                 }
                                                 required
                                                 disabled={isLoading}
-                                                className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2C2C2C] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-colors"
+                                                className="w-full px-4! py-3! pr-12! border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2C2C2C] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-colors"
                                                 placeholder="Минимум 6 символов"
                                                 minLength={6}
                                             />
@@ -200,7 +200,7 @@ function ResetPasswordForm() {
                                     <div>
                                         <label
                                             htmlFor="confirmPassword"
-                                            className="block text-sm font-medium text-gray-700 mb-2"
+                                            className="block text-sm font-medium text-gray-700 mb-2!"
                                         >
                                             Подтвердите пароль
                                         </label>
@@ -217,7 +217,7 @@ function ResetPasswordForm() {
                                             }
                                             required
                                             disabled={isLoading}
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2C2C2C] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-colors"
+                                            className="w-full px-4! py-3! border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2C2C2C] focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-colors"
                                             placeholder="Повторите пароль"
                                             minLength={6}
                                         />
@@ -225,7 +225,7 @@ function ResetPasswordForm() {
 
                                     {/* Password strength indicator */}
                                     {password && (
-                                        <div className="space-y-2">
+                                        <div className="space-y-2!">
                                             <div className="flex items-center text-xs text-gray-600">
                                                 <span>Надежность пароля:</span>
                                             </div>
@@ -275,7 +275,7 @@ function ResetPasswordForm() {
                                                 {message.text}
                                             </p>
                                             {message.type === "success" && (
-                                                <p className="text-xs text-green-600 mt-1">
+                                                <p className="text-xs text-green-600 mt-1!">
                                                     Перенаправление на страницу
                                                     входа...
                                                 </p>
@@ -300,7 +300,7 @@ function ResetPasswordForm() {
                                     </Button>
                                 </form>
 
-                                <div className="mt-6 text-center">
+                                <div className="mt-6! text-center">
                                     <Link
                                         href="/auth/signin"
                                         className="text-sm text-[#2C2C2C] hover:text-gray-700 font-medium transition-colors"
@@ -315,7 +315,7 @@ function ResetPasswordForm() {
 
                 {/* Tips Card */}
                 {token && (
-                    <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <div className="mt-6! bg-blue-50 border border-blue-200 rounded-lg p-4!">
                         <div className="flex items-start">
                             <div className="shrink-0">
                                 <svg
@@ -330,12 +330,12 @@ function ResetPasswordForm() {
                                     />
                                 </svg>
                             </div>
-                            <div className="ml-3">
+                            <div className="ml-3!">
                                 <h3 className="text-sm font-medium text-blue-800">
                                     Рекомендации для пароля
                                 </h3>
-                                <div className="mt-2 text-sm text-blue-700">
-                                    <ul className="list-disc list-inside space-y-1">
+                                <div className="mt-2! text-sm text-blue-700">
+                                    <ul className="list-disc list-inside space-y-1!">
                                         <li>Минимум 6 символов</li>
                                         <li>
                                             Используйте буквы и цифры
@@ -368,4 +368,3 @@ export default function ResetPasswordPage() {
         </Suspense>
     );
 }
-
