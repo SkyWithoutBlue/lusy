@@ -153,7 +153,7 @@ export default function About() {
                         <div className="relative">
                             <div className="relative group">
                                 <div className="relative bg-white rounded-2xl p-4 sm:p-6 shadow-xl transform transition-transform duration-500 mx-auto">
-                                    <div className="relative overflow-hidden rounded-2xl max-h-[380px] sm:max-h-[480px] lg:max-h-[700px]">
+                                    <div className="relative overflow-hidden rounded-2xl max-h-[450px] sm:max-h-[480px] lg:max-h-full">
                                         <Image
                                             src="/lusy_gym.jpg"
                                             alt="Lusy"

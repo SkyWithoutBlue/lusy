@@ -84,12 +84,20 @@ export default function LoginForm() {
                     </div>
 
                     <div>
-                        <label
-                            htmlFor="password"
-                            className="block text-sm font-semibold text-[#2C2C2C] mb-2!"
-                        >
-                            Пароль
-                        </label>
+                        <div className="flex justify-between items-center mb-2!">
+                            <label
+                                htmlFor="password"
+                                className="block text-sm font-semibold text-[#2C2C2C]"
+                            >
+                                Пароль
+                            </label>
+                            <a
+                                href="/auth/forgot-password"
+                                className="text-sm text-[#2C2C2C] hover:text-gray-700 font-medium transition-colors"
+                            >
+                                Забыли пароль?
+                            </a>
+                        </div>
                         <input
                             {...register("password")}
                             type="password"
